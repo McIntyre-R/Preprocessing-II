@@ -11,19 +11,23 @@ nav{
         margin: 0 auto;
         padding: 2% 0;
 
-        @media @mobile {
+        @media @tablet {
             width: 100%;
             flex-direction: column;
             
         }
         h1{
             font-size: 5rem;
+         
+            @keyframes pulse {.mixi-frames;}
+            .animation(pulse 1.5s ease infinite;);
+
+
 
             @media @mobile {
                 font-size: 3rem;
                 padding: 10% 0;
               }
-            
         }
         .links{
             display: flex;
@@ -33,7 +37,6 @@ nav{
             @media @mobile {
                 width: 100%;
                 justify-content: space-evenly;
-                
                 
             }
             a{

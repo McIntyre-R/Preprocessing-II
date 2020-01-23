@@ -1,3 +1,10 @@
+.mixi-frames 0%,
+.mixi-frames 100% {
+  color: #4169E1;
+}
+.mixi-frames 50% {
+  color: #FF4500;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -178,7 +185,7 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .container {
     width: 90%;
   }
@@ -194,7 +201,7 @@ nav div {
   margin: 0 auto;
   padding: 2% 0;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   nav div {
     width: 100%;
     flex-direction: column;
@@ -202,6 +209,16 @@ nav div {
 }
 nav div h1 {
   font-size: 5rem;
+  animation: pulse 1.5s ease infinite;
+}
+@keyframes pulse {
+  0%,
+  100% {
+    color: #4169E1;
+  }
+  50% {
+    color: #FF4500;
+  }
 }
 @media (max-width: 500px) {
   nav div h1 {
@@ -242,7 +259,7 @@ nav div .links a {
   padding-bottom: 2%;
   border-bottom: dashed 2px #C0C0C0;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .home .welcome {
     width: 100%;
   }
@@ -344,5 +361,9 @@ nav div .links a {
   background-color: #17A2B8;
   width: 80%;
   border-radius: 10px;
-  width: 100%;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    width: 100%;
+  }
 }

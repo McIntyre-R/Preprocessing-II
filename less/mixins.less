@@ -1,11 +1,22 @@
 // Mixins in here
 
-.btn(){
+.btnM(@font-size,@bg-color,@width){
     text-align: center;
     color:  @white;
-    font-size: 1.6rem;
+    font-size: @font-size;
     padding: 10px 2%;
-    background-color: @button-bg;
-    width:80%;
+    background-color: @bg-color;
+    width:@width;
     border-radius: 10px;
   }
+
+
+ .mixi-frames{
+          0% , 100%{color: #4169E1 };
+          50% {color: #FF4500};
+ }
+  
+  .animation(@arguments) {
+    animation: @arguments;
+  }
+  

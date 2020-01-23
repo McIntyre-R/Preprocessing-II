@@ -6,7 +6,7 @@
     padding-bottom: 2%;
     border-bottom: dashed 2px @navigation-border;
 
-    @media @mobile {
+    @media @tablet {
       width: 100%;
 
     }
@@ -105,9 +105,11 @@
       }
 
       .btn{
-        .btn();
-
-        width: 100%;
+        .btnM(1.6rem , @button-bg , 80%);
+        @media @mobile{
+          width: 100%;
+        }
+        
       }
     }
   }
